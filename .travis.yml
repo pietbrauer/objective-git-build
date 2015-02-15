@@ -2,6 +2,6 @@ language: objective-c
 install:
   - brew update
   - brew install carthage
-script: carthage bootstrap
+script: travis_wait carthage bootstrap
 notifications:
   email: false
