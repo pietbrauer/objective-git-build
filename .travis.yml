@@ -1,5 +1,7 @@
 language: objective-c
-install: brew install carthage
+install:
+  - brew update
+  - brew install carthage
 script: carthage bootstrap
 notifications:
   email: false
